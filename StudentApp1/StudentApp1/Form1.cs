@@ -2,11 +2,18 @@ namespace StudentApp1
 {
     public partial class Form1 : Form
     {
-        string StudentName = "Andrii";
+        string StudentName = "";
 
-        public Form1()
+        public Form1(string studentName)
         {
             InitializeComponent();
+            StudentName = studentName;
+            UpdateHelloText();
+        }
+
+        private void UpdateHelloText()
+        {
+            HelloText.Text = $"Hello! {StudentName} :)";
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
@@ -30,7 +37,7 @@ namespace StudentApp1
         private void Rules_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Rules rules = new Rules();
+            Rules rules = new Rules(StudentName);
             rules.Show();
         }
 

@@ -27,8 +27,6 @@
         ///  the contents of this method with the code editor.
         /// </summary>
         /// 
-        string Name = "Andrii";
-        string Surname = "Matviienko";
         private void InitializeComponent()
         {
             HelloText = new Label();

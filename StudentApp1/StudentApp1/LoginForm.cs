@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
 using Newtonsoft.Json;
+using static StudentApp1.AdminForm;
 
 namespace StudentApp1
 {
     public partial class LoginForm : Form
     {
-        private readonly string filePath = "C:\\Users\\Yuri\\source\\repos\\StudentApp1\\StudentApp1\\students.json";
+        private readonly string filePath = "C:\\Users\\Yuri\\source\\repos\\StudentApp1\\StudentApp1\\users.json";
 
         public LoginForm()
         {
@@ -18,27 +19,41 @@ namespace StudentApp1
         private void LoginButton_Click(object sender, EventArgs e)
         {
             string username = usernameTextBox.Text; 
-            string password = passwordTextBox.Text; 
+            string password = passwordTextBox.Text;
 
-            List<Student> students = LoadStudentsFromJson();
+            UserDatabase userDatabase = LoadUsersFromJson();
 
             bool isAuthenticated = false;
+            bool isAdmin = false;
 
-            foreach (Student student in students)
+            foreach (User user in userDatabase.Users)
             {
-                if (student.Email == username && student.Password == password)
+                if ((user.Username == username && user.Password == password) || (user.Email == username && user.Password == password))
                 {
-                    isAuthenticated = true;
-                    break;
+                    if (user.Username == "admin" && user.Password == "admin")
+                    {
+                        isAdmin = true;
+                        break;
+                    }
+                    else
+                    {
+                        isAuthenticated = true;
+                        break;
+                    }
                 }
             }
 
             if (isAuthenticated)
             {
-                MessageBox.Show("Succesful!");
-                Form1 form1 = new Form1();  
+                Form1 form1 = new Form1(username);
                 this.Hide();
                 form1.Show();
+            }
+            else if (isAdmin)
+            {
+                AdminForm adminForm = new AdminForm();
+                this.Hide();
+                adminForm.Show();
             }
             else
             {
@@ -46,17 +61,17 @@ namespace StudentApp1
             }
         }
 
-        private List<Student> LoadStudentsFromJson()
+        private UserDatabase LoadUsersFromJson()
         {
             try
             {
-                string jsonText = File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), filePath));
-                return JsonConvert.DeserializeObject<List<Student>>(jsonText);
+                string jsonText = File.ReadAllText(filePath);
+                return JsonConvert.DeserializeObject<UserDatabase>(jsonText);
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Something went wrong with reading file: " + ex.Message);
-                return new List<Student>();
+                return new UserDatabase { Users = new List<User>() };
             }
         }
     }
@@ -64,6 +79,7 @@ namespace StudentApp1
     public class Student
     {
         public int Id { get; set; }
+        public string UserName { get; set; }
         public string Name { get; set; }
         public int Age { get; set; }
         public string Email { get; set; }

@@ -20,3 +20,4 @@ C:\Users\Yuri\source\repos\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\Stud
 C:\Users\Yuri\source\repos\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.LoginForm.resources
 C:\Users\Yuri\source\repos\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.Properties.Resources.resources
 C:\Users\Yuri\source\repos\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.csproj.CopyComplete
+C:\Users\Yuri\source\repos\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.AdminForm.resources
