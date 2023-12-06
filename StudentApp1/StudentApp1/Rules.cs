@@ -21,7 +21,7 @@ namespace StudentApp1
 
         private void AcceptButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             Form1 form1 = new Form1(StudentName);
             form1.Show();
         }

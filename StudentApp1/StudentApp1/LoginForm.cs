@@ -45,9 +45,11 @@ namespace StudentApp1
 
             if (isAuthenticated)
             {
-                Form1 form1 = new Form1(username);
+                //Form1 form1 = new Form1(username);
+                Rules rules = new Rules(username);
                 this.Hide();
-                form1.Show();
+                rules.Show();
+                //form1.Show();
             }
             else if (isAdmin)
             {

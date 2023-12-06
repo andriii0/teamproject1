@@ -45,5 +45,12 @@ namespace StudentApp1
         {
             HelloText.Text = $"Hello! {StudentName} :)";
         }
+
+        private void Notes_Click(object sender, EventArgs e)
+        {
+            NoteDisplayForm noteDisplayForm = new NoteDisplayForm();
+            this.Close();
+            noteDisplayForm.Show(); 
+        }
     }
 }
