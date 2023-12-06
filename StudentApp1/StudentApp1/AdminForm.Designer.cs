@@ -50,6 +50,9 @@
             label1 = new Label();
             RegisterButton = new Button();
             LogOutLabel1 = new Label();
+            panel6 = new Panel();
+            textBox6 = new TextBox();
+            label7 = new Label();
             tabPage2.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
@@ -58,6 +61,7 @@
             panel3.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
+            panel6.SuspendLayout();
             SuspendLayout();
             // 
             // tabPage2
@@ -96,6 +100,7 @@
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(panel6);
             tabPage1.Controls.Add(panel5);
             tabPage1.Controls.Add(panel4);
             tabPage1.Controls.Add(panel3);
@@ -269,6 +274,31 @@
             LogOutLabel1.Text = "Log Out";
             LogOutLabel1.Click += LogOutLabel1_Click;
             // 
+            // panel6
+            // 
+            panel6.Controls.Add(textBox6);
+            panel6.Controls.Add(label7);
+            panel6.Location = new Point(386, 117);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(210, 49);
+            panel6.TabIndex = 16;
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(111, 9);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(86, 34);
+            textBox6.TabIndex = 10;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(3, 6);
+            label7.Name = "label7";
+            label7.Size = new Size(102, 31);
+            label7.TabIndex = 12;
+            label7.Text = "Room№";
+            // 
             // AdminForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -292,6 +322,8 @@
             panel2.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -319,5 +351,8 @@
         private Panel panel5;
         private TextBox textBox5;
         private Label label6;
+        private Panel panel6;
+        private TextBox textBox6;
+        private Label label7;
     }
 }

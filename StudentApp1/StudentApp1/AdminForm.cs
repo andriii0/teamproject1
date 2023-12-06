@@ -80,6 +80,7 @@ namespace StudentApp1
             public string Name { get; set; }
             public string Username { get; set; }
             public int Age { get; set; }
+            public int Room { get; set; }
             public string Email { get; set; }
             public string Password { get; set; }
         }
@@ -99,16 +100,14 @@ namespace StudentApp1
                 Username = textBox2.Text,
                 Age = int.Parse(textBox3.Text), // Assuming the age input is valid
                 Email = textBox4.Text,
-                Password = textBox5.Text
+                Password = textBox5.Text,
+                Room = int.Parse(textBox6.Text)
             };
 
-            // Add the new user to the user list
             userDatabase.Users.Add(newUser);
-
-            // Save the updated user list to the JSON file
             SaveUserData();
 
-            MessageBox.Show("Пользователь успешно добавлен!");
+            MessageBox.Show("User has been added!");
 
         }
 

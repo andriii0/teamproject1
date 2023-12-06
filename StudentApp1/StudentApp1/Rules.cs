@@ -17,7 +17,6 @@ namespace StudentApp1
         public Rules(string studentName)
         {
             InitializeComponent();
-            StudentName = studentName;
         }
 
         private void AcceptButton_Click(object sender, EventArgs e)
