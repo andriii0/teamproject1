@@ -16,7 +16,7 @@ namespace StudentApp1
 {
     public partial class AdminForm : Form
     {
-        private const string jsonFilePath = "C:\\Users\\Yuri\\source\\repos\\StudentApp1\\StudentApp1\\users.json";
+        private const string jsonFilePath = "users.json";
         private UserDatabase userDatabase;
 
         public AdminForm()
@@ -92,13 +92,23 @@ namespace StudentApp1
 
         private void RegisterButton_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(textBox1.Text) ||
+                string.IsNullOrEmpty(textBox2.Text) ||
+                string.IsNullOrEmpty(textBox3.Text) ||
+                string.IsNullOrEmpty(textBox4.Text) ||
+                string.IsNullOrEmpty(textBox5.Text) ||
+                string.IsNullOrEmpty(textBox6.Text))
+            {
+                MessageBox.Show("All fields are required!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             // Create a new user based on form inputs
             User newUser = new User
             {
-                Id = userDatabase.Users.Count, // Assign unique ID
+                Id = userDatabase.Users.Count,
                 Name = textBox1.Text,
                 Username = textBox2.Text,
-                Age = int.Parse(textBox3.Text), // Assuming the age input is valid
+                Age = int.Parse(textBox3.Text),
                 Email = textBox4.Text,
                 Password = textBox5.Text,
                 Room = int.Parse(textBox6.Text)
@@ -110,6 +120,5 @@ namespace StudentApp1
             MessageBox.Show("User has been added!");
 
         }
-
     }
 }

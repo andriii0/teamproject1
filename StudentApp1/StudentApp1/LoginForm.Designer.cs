@@ -85,7 +85,7 @@
             // 
             // LoginButton
             // 
-            LoginButton.BackColor = Color.IndianRed;
+            LoginButton.BackColor = Color.Snow;
             LoginButton.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
             LoginButton.Location = new Point(142, 380);
             LoginButton.Name = "LoginButton";
@@ -99,7 +99,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.LightPink;
+            BackColor = Color.DarkSalmon;
             ClientSize = new Size(601, 522);
             Controls.Add(LoginButton);
             Controls.Add(label3);

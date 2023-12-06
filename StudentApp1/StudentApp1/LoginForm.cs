@@ -9,7 +9,7 @@ namespace StudentApp1
 {
     public partial class LoginForm : Form
     {
-        private readonly string filePath = "C:\\Users\\Yuri\\source\\repos\\StudentApp1\\StudentApp1\\users.json";
+        private readonly string filePath = "users.json";
 
         public LoginForm()
         {
@@ -18,7 +18,7 @@ namespace StudentApp1
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            string username = usernameTextBox.Text; 
+            string username = usernameTextBox.Text;
             string password = passwordTextBox.Text;
 
             UserDatabase userDatabase = LoadUsersFromJson();

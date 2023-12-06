@@ -45,7 +45,7 @@
             // 
             HelloText.AutoSize = true;
             HelloText.Font = new Font("Trebuchet MS", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            HelloText.ForeColor = Color.DarkOrchid;
+            HelloText.ForeColor = Color.WhiteSmoke;
             HelloText.Location = new Point(373, 65);
             HelloText.Name = "HelloText";
             HelloText.Size = new Size(45, 29);
@@ -62,37 +62,41 @@
             // 
             // Schedule
             // 
+            Schedule.BackColor = Color.Snow;
             Schedule.Font = new Font("Sylfaen", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             Schedule.Location = new Point(520, 217);
             Schedule.Name = "Schedule";
             Schedule.Size = new Size(185, 118);
             Schedule.TabIndex = 2;
             Schedule.Text = "Schedule\r\n";
-            Schedule.UseVisualStyleBackColor = true;
+            Schedule.UseVisualStyleBackColor = false;
             // 
             // ToDo
             // 
+            ToDo.BackColor = Color.Snow;
             ToDo.Font = new Font("Sylfaen", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             ToDo.Location = new Point(306, 217);
             ToDo.Name = "ToDo";
             ToDo.Size = new Size(185, 118);
             ToDo.TabIndex = 3;
             ToDo.Text = "To Do List";
-            ToDo.UseVisualStyleBackColor = true;
+            ToDo.UseVisualStyleBackColor = false;
             // 
             // Announcements
             // 
+            Announcements.BackColor = Color.Snow;
             Announcements.Font = new Font("Sylfaen", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             Announcements.Location = new Point(98, 217);
             Announcements.Name = "Announcements";
             Announcements.Size = new Size(185, 118);
             Announcements.TabIndex = 5;
             Announcements.Text = "Announcements";
-            Announcements.UseVisualStyleBackColor = true;
+            Announcements.UseVisualStyleBackColor = false;
             Announcements.Click += button1_Click;
             // 
             // Rules
             // 
+            Rules.BackColor = Color.Snow;
             Rules.Font = new Font("Sylfaen", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             Rules.Location = new Point(306, 372);
             Rules.Name = "Rules";
@@ -100,14 +104,14 @@
             Rules.Size = new Size(185, 118);
             Rules.TabIndex = 6;
             Rules.Text = "House Rules";
-            Rules.UseVisualStyleBackColor = true;
+            Rules.UseVisualStyleBackColor = false;
             Rules.Click += Rules_Click;
             // 
             // LogOutLabel
             // 
             LogOutLabel.AutoSize = true;
             LogOutLabel.Font = new Font("Trebuchet MS", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            LogOutLabel.ForeColor = Color.DarkOrchid;
+            LogOutLabel.ForeColor = Color.GhostWhite;
             LogOutLabel.Location = new Point(687, 117);
             LogOutLabel.Name = "LogOutLabel";
             LogOutLabel.Size = new Size(100, 29);
@@ -117,16 +121,18 @@
             // 
             // Complaints
             // 
+            Complaints.BackColor = Color.Snow;
             Complaints.Font = new Font("Sylfaen", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             Complaints.Location = new Point(98, 372);
             Complaints.Name = "Complaints";
             Complaints.Size = new Size(185, 118);
             Complaints.TabIndex = 8;
             Complaints.Text = "Leave a complaints";
-            Complaints.UseVisualStyleBackColor = true;
+            Complaints.UseVisualStyleBackColor = false;
             // 
             // Notes
             // 
+            Notes.BackColor = Color.Snow;
             Notes.Font = new Font("Sylfaen", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             Notes.Location = new Point(520, 372);
             Notes.Name = "Notes";
@@ -134,12 +140,13 @@
             Notes.Size = new Size(185, 118);
             Notes.TabIndex = 9;
             Notes.Text = "Notes";
-            Notes.UseVisualStyleBackColor = true;
+            Notes.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DarkSalmon;
             ClientSize = new Size(845, 638);
             Controls.Add(Notes);
             Controls.Add(Complaints);

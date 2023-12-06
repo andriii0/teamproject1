@@ -29,7 +29,7 @@ namespace StudentApp1
 
         private void label1_Click(object sender, EventArgs e)
         {
-            LoginForm loginForm = new LoginForm(); 
+            LoginForm loginForm = new LoginForm();
             this.Close();
             loginForm.Show();
         }
