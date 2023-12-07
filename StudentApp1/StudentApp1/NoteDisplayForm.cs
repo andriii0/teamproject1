@@ -31,7 +31,6 @@ namespace StudentApp1
         }
         private void LoadNotes()
         {
-            // Load notes from JSON file
             string jsonFilePath = Path.Combine(Application.StartupPath, "notes.json");
 
             if (File.Exists(jsonFilePath))
@@ -88,10 +87,9 @@ namespace StudentApp1
             return panel;
         }
 
-
         private void AddNotes_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             AddNoteForm addNoteForm = new AddNoteForm();
             addNoteForm.Show();
         }
