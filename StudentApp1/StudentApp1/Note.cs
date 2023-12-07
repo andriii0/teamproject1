@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentApp1
 {
-    public class Note
+    internal class Note
     {
         public string Author { get; set; }
         public string Content { get; set; }

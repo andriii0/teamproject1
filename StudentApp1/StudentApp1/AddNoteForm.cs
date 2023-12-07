@@ -42,6 +42,7 @@ namespace StudentApp1
             File.WriteAllText("notes.json", json);
         }
 
+
         private void BackButton_Click(object sender, EventArgs e)
         {
             NoteDisplayForm noteDisplayForm = new NoteDisplayForm();

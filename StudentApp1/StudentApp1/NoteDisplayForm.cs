@@ -25,12 +25,13 @@ namespace StudentApp1
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1(StudentName);
+            Form1 form1 = new Form1();
             this.Close();
             form1.Show();
         }
         private void LoadNotes()
         {
+            // Load notes from JSON file
             string jsonFilePath = Path.Combine(Application.StartupPath, "notes.json");
 
             if (File.Exists(jsonFilePath))
@@ -50,7 +51,7 @@ namespace StudentApp1
         {
             tableLayoutPanel.Controls.Clear();
 
-            foreach (Note note in notes)
+            foreach (var note in notes)
             {
                 Panel notePanel = CreateNotePanel(note);
                 tableLayoutPanel.Controls.Add(notePanel);
@@ -69,7 +70,7 @@ namespace StudentApp1
             Label authorLabel = new Label
             {
                 Text = $"Author: {note.Author}",
-                Dock = DockStyle.Bottom
+                Dock = DockStyle.Top
             };
 
             TextBox contentTextBox = new TextBox
@@ -86,6 +87,7 @@ namespace StudentApp1
 
             return panel;
         }
+
 
         private void AddNotes_Click(object sender, EventArgs e)
         {

@@ -46,19 +46,17 @@
             HelloText.AutoSize = true;
             HelloText.Font = new Font("Trebuchet MS", 18F, FontStyle.Bold, GraphicsUnit.Point);
             HelloText.ForeColor = Color.WhiteSmoke;
-            HelloText.Location = new Point(533, 108);
-            HelloText.Margin = new Padding(4, 0, 4, 0);
+            HelloText.Location = new Point(373, 65);
             HelloText.Name = "HelloText";
-            HelloText.Size = new Size(68, 44);
+            HelloText.Size = new Size(45, 29);
             HelloText.TabIndex = 0;
             HelloText.Text = "Hi!";
             // 
             // ProfileImage
             // 
-            ProfileImage.Location = new Point(981, 42);
-            ProfileImage.Margin = new Padding(4, 5, 4, 5);
+            ProfileImage.Location = new Point(687, 25);
             ProfileImage.Name = "ProfileImage";
-            ProfileImage.Size = new Size(146, 132);
+            ProfileImage.Size = new Size(102, 79);
             ProfileImage.TabIndex = 1;
             ProfileImage.TabStop = false;
             // 
@@ -66,10 +64,9 @@
             // 
             Schedule.BackColor = Color.Snow;
             Schedule.Font = new Font("Sylfaen", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            Schedule.Location = new Point(743, 362);
-            Schedule.Margin = new Padding(4, 5, 4, 5);
+            Schedule.Location = new Point(520, 217);
             Schedule.Name = "Schedule";
-            Schedule.Size = new Size(264, 197);
+            Schedule.Size = new Size(185, 118);
             Schedule.TabIndex = 2;
             Schedule.Text = "Schedule\r\n";
             Schedule.UseVisualStyleBackColor = false;
@@ -78,10 +75,9 @@
             // 
             ToDo.BackColor = Color.Snow;
             ToDo.Font = new Font("Sylfaen", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            ToDo.Location = new Point(437, 362);
-            ToDo.Margin = new Padding(4, 5, 4, 5);
+            ToDo.Location = new Point(306, 217);
             ToDo.Name = "ToDo";
-            ToDo.Size = new Size(264, 197);
+            ToDo.Size = new Size(185, 118);
             ToDo.TabIndex = 3;
             ToDo.Text = "To Do List";
             ToDo.UseVisualStyleBackColor = false;
@@ -90,10 +86,9 @@
             // 
             Announcements.BackColor = Color.Snow;
             Announcements.Font = new Font("Sylfaen", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            Announcements.Location = new Point(140, 362);
-            Announcements.Margin = new Padding(4, 5, 4, 5);
+            Announcements.Location = new Point(98, 217);
             Announcements.Name = "Announcements";
-            Announcements.Size = new Size(264, 197);
+            Announcements.Size = new Size(185, 118);
             Announcements.TabIndex = 5;
             Announcements.Text = "Announcements";
             Announcements.UseVisualStyleBackColor = false;
@@ -103,11 +98,10 @@
             // 
             Rules.BackColor = Color.Snow;
             Rules.Font = new Font("Sylfaen", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            Rules.Location = new Point(437, 620);
-            Rules.Margin = new Padding(4, 5, 4, 5);
+            Rules.Location = new Point(306, 372);
             Rules.Name = "Rules";
             Rules.RightToLeft = RightToLeft.Yes;
-            Rules.Size = new Size(264, 197);
+            Rules.Size = new Size(185, 118);
             Rules.TabIndex = 6;
             Rules.Text = "House Rules";
             Rules.UseVisualStyleBackColor = false;
@@ -118,10 +112,9 @@
             LogOutLabel.AutoSize = true;
             LogOutLabel.Font = new Font("Trebuchet MS", 18F, FontStyle.Bold, GraphicsUnit.Point);
             LogOutLabel.ForeColor = Color.GhostWhite;
-            LogOutLabel.Location = new Point(981, 195);
-            LogOutLabel.Margin = new Padding(4, 0, 4, 0);
+            LogOutLabel.Location = new Point(687, 117);
             LogOutLabel.Name = "LogOutLabel";
-            LogOutLabel.Size = new Size(148, 44);
+            LogOutLabel.Size = new Size(100, 29);
             LogOutLabel.TabIndex = 7;
             LogOutLabel.Text = "Log Out";
             LogOutLabel.Click += label1_Click;
@@ -130,10 +123,9 @@
             // 
             Complaints.BackColor = Color.Snow;
             Complaints.Font = new Font("Sylfaen", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            Complaints.Location = new Point(140, 620);
-            Complaints.Margin = new Padding(4, 5, 4, 5);
+            Complaints.Location = new Point(98, 372);
             Complaints.Name = "Complaints";
-            Complaints.Size = new Size(264, 197);
+            Complaints.Size = new Size(185, 118);
             Complaints.TabIndex = 8;
             Complaints.Text = "Leave a complaints";
             Complaints.UseVisualStyleBackColor = false;
@@ -142,11 +134,10 @@
             // 
             Notes.BackColor = Color.Snow;
             Notes.Font = new Font("Sylfaen", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            Notes.Location = new Point(743, 620);
-            Notes.Margin = new Padding(4, 5, 4, 5);
+            Notes.Location = new Point(520, 372);
             Notes.Name = "Notes";
             Notes.RightToLeft = RightToLeft.Yes;
-            Notes.Size = new Size(264, 197);
+            Notes.Size = new Size(185, 118);
             Notes.TabIndex = 9;
             Notes.Text = "Notes";
             Notes.UseVisualStyleBackColor = false;
@@ -154,10 +145,10 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSalmon;
-            ClientSize = new Size(1207, 1063);
+            ClientSize = new Size(845, 638);
             Controls.Add(Notes);
             Controls.Add(Complaints);
             Controls.Add(LogOutLabel);
@@ -167,7 +158,6 @@
             Controls.Add(Schedule);
             Controls.Add(ProfileImage);
             Controls.Add(HelloText);
-            Margin = new Padding(4, 5, 4, 5);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;

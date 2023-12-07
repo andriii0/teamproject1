@@ -4,16 +4,15 @@ namespace StudentApp1
     {
         string StudentName = "";
 
-        public Form1(string studentName)
+        public Form1()
         {
             InitializeComponent();
-            StudentName = studentName;
             UpdateHelloText();
         }
 
         private void UpdateHelloText()
         {
-            HelloText.Text = $"Hello! {StudentName} :)";
+            HelloText.Text = $"Hello! {CurrentUser.StudentName} :)";
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
@@ -37,20 +36,20 @@ namespace StudentApp1
         private void Rules_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Rules rules = new Rules(StudentName);
+            Rules rules = new Rules();
             rules.Show();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            HelloText.Text = $"Hello! {StudentName} :)";
-        }
-
         private void Notes_Click(object sender, EventArgs e)
         {
             NoteDisplayForm noteDisplayForm = new NoteDisplayForm();
             this.Close();
-            noteDisplayForm.Show(); 
+            noteDisplayForm.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+        }
+
+
     }
 }

@@ -12,17 +12,16 @@ namespace StudentApp1
 {
     public partial class Rules : Form
     {
-        private string StudentName;
 
-        public Rules(string studentName)
+        public Rules()
         {
             InitializeComponent();
         }
 
         private void AcceptButton_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Form1 form1 = new Form1(StudentName);
+            this.Hide();
+            Form1 form1 = new Form1();
             form1.Show();
         }
     }

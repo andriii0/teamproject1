@@ -25,6 +25,7 @@ namespace StudentApp1
 
             bool isAuthenticated = false;
             bool isAdmin = false;
+            int roomNumber = 0;
 
             foreach (User user in userDatabase.Users)
             {
@@ -38,6 +39,7 @@ namespace StudentApp1
                     else
                     {
                         isAuthenticated = true;
+                        roomNumber = user.Room;
                         break;
                     }
                 }
@@ -45,9 +47,11 @@ namespace StudentApp1
 
             if (isAuthenticated)
             {
-                Form1 form1 = new Form1(username);
+                CurrentUser.StudentName = username;
+                CurrentUser.RoomNumber = roomNumber;
+                Rules rules = new Rules();
                 this.Hide();
-                form1.Show();
+                rules.Show();
             }
             else if (isAdmin)
             {
@@ -74,16 +78,5 @@ namespace StudentApp1
                 return new UserDatabase { Users = new List<User>() };
             }
         }
-    }
-
-    public class Student
-    {
-        public int Id { get; set; }
-        public string UserName { get; set; }
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public int Room { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
     }
 }
