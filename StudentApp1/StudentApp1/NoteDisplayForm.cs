@@ -50,7 +50,7 @@ namespace StudentApp1
         {
             tableLayoutPanel.Controls.Clear();
 
-            foreach (var note in notes)
+            foreach (Note note in notes)
             {
                 Panel notePanel = CreateNotePanel(note);
                 tableLayoutPanel.Controls.Add(notePanel);
@@ -69,7 +69,7 @@ namespace StudentApp1
             Label authorLabel = new Label
             {
                 Text = $"Author: {note.Author}",
-                Dock = DockStyle.Top
+                Dock = DockStyle.Bottom
             };
 
             TextBox contentTextBox = new TextBox
@@ -89,7 +89,7 @@ namespace StudentApp1
 
         private void AddNotes_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             AddNoteForm addNoteForm = new AddNoteForm();
             addNoteForm.Show();
         }
