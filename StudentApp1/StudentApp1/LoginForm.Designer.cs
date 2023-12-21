@@ -1,4 +1,6 @@
-﻿namespace StudentApp1
+﻿using System.Windows.Forms;
+
+namespace StudentApp1
 {
     partial class LoginForm
     {
@@ -38,26 +40,29 @@
             // 
             // usernameTextBox
             // 
-            usernameTextBox.Font = new Font("Yu Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            usernameTextBox.Location = new Point(142, 180);
+            usernameTextBox.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            usernameTextBox.Location = new Point(77, 222);
             usernameTextBox.Name = "usernameTextBox";
-            usernameTextBox.Size = new Size(261, 46);
+            usernameTextBox.PlaceholderText = "Name or Email";
+            usernameTextBox.Size = new Size(261, 39);
             usernameTextBox.TabIndex = 0;
             // 
             // passwordTextBox
             // 
-            passwordTextBox.Font = new Font("Yu Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            passwordTextBox.Location = new Point(142, 299);
+            passwordTextBox.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            passwordTextBox.Location = new Point(77, 343);
             passwordTextBox.Name = "passwordTextBox";
-            passwordTextBox.Size = new Size(261, 46);
+            passwordTextBox.PasswordChar = '*';
+            passwordTextBox.PlaceholderText = "Password";
+            passwordTextBox.Size = new Size(261, 39);
             passwordTextBox.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.IndianRed;
+            label1.BackColor = Color.White;
             label1.Font = new Font("Yu Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(205, 67);
+            label1.Location = new Point(144, 67);
             label1.Name = "label1";
             label1.Size = new Size(128, 31);
             label1.TabIndex = 2;
@@ -67,7 +72,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Yu Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(142, 125);
+            label2.Location = new Point(77, 162);
             label2.Name = "label2";
             label2.Size = new Size(261, 31);
             label2.TabIndex = 3;
@@ -77,7 +82,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Yu Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(142, 249);
+            label3.Location = new Point(91, 288);
             label3.Name = "label3";
             label3.Size = new Size(226, 31);
             label3.TabIndex = 4;
@@ -87,7 +92,7 @@
             // 
             LoginButton.BackColor = Color.Snow;
             LoginButton.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            LoginButton.Location = new Point(142, 380);
+            LoginButton.Location = new Point(77, 412);
             LoginButton.Name = "LoginButton";
             LoginButton.Size = new Size(261, 50);
             LoginButton.TabIndex = 5;
@@ -99,14 +104,19 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.DarkSalmon;
-            ClientSize = new Size(601, 522);
+            BackColor = Color.White;
+            BackgroundImage = Properties.Resources.rm222_mind_20;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(430, 608);
             Controls.Add(LoginButton);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(passwordTextBox);
             Controls.Add(usernameTextBox);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "LoginForm";
             Text = "LoginForm";
             ResumeLayout(false);

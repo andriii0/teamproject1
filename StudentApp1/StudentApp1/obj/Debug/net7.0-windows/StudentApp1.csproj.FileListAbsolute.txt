@@ -23,3 +23,4 @@ C:\Users\Yuri\source\repos\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\Stud
 C:\Users\Yuri\source\repos\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.AdminForm.resources
 C:\Users\Yuri\source\repos\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.AddNoteForm.resources
 C:\Users\Yuri\source\repos\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.NoteDisplayForm.resources
+C:\Users\Yuri\source\repos\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.Complaints.resources

@@ -50,6 +50,11 @@ namespace StudentApp1
         {
         }
 
-
+        private void Complaints_Click(object sender, EventArgs e)
+        {
+            Complaints complaints = new Complaints();
+            this.Close();
+            complaints.Show();
+        }
     }
 }

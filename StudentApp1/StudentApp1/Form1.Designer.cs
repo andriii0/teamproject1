@@ -30,7 +30,6 @@
         private void InitializeComponent()
         {
             HelloText = new Label();
-            ProfileImage = new PictureBox();
             Schedule = new Button();
             ToDo = new Button();
             Announcements = new Button();
@@ -38,12 +37,12 @@
             LogOutLabel = new Label();
             Complaints = new Button();
             Notes = new Button();
-            ((System.ComponentModel.ISupportInitialize)ProfileImage).BeginInit();
             SuspendLayout();
             // 
             // HelloText
             // 
             HelloText.AutoSize = true;
+            HelloText.BackColor = Color.Transparent;
             HelloText.Font = new Font("Trebuchet MS", 18F, FontStyle.Bold, GraphicsUnit.Point);
             HelloText.ForeColor = Color.WhiteSmoke;
             HelloText.Location = new Point(373, 65);
@@ -51,14 +50,6 @@
             HelloText.Size = new Size(45, 29);
             HelloText.TabIndex = 0;
             HelloText.Text = "Hi!";
-            // 
-            // ProfileImage
-            // 
-            ProfileImage.Location = new Point(687, 25);
-            ProfileImage.Name = "ProfileImage";
-            ProfileImage.Size = new Size(102, 79);
-            ProfileImage.TabIndex = 1;
-            ProfileImage.TabStop = false;
             // 
             // Schedule
             // 
@@ -110,9 +101,10 @@
             // LogOutLabel
             // 
             LogOutLabel.AutoSize = true;
+            LogOutLabel.BackColor = Color.Transparent;
             LogOutLabel.Font = new Font("Trebuchet MS", 18F, FontStyle.Bold, GraphicsUnit.Point);
             LogOutLabel.ForeColor = Color.GhostWhite;
-            LogOutLabel.Location = new Point(687, 117);
+            LogOutLabel.Location = new Point(688, 65);
             LogOutLabel.Name = "LogOutLabel";
             LogOutLabel.Size = new Size(100, 29);
             LogOutLabel.TabIndex = 7;
@@ -129,6 +121,7 @@
             Complaints.TabIndex = 8;
             Complaints.Text = "Leave a complaints";
             Complaints.UseVisualStyleBackColor = false;
+            Complaints.Click += Complaints_Click;
             // 
             // Notes
             // 
@@ -147,7 +140,9 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.DarkSalmon;
+            BackColor = Color.DarkGray;
+            BackgroundImage = Properties.Resources._8ecd7a74040c6137d8db25014de3cfaa;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(845, 638);
             Controls.Add(Notes);
             Controls.Add(Complaints);
@@ -156,12 +151,13 @@
             Controls.Add(Announcements);
             Controls.Add(ToDo);
             Controls.Add(Schedule);
-            Controls.Add(ProfileImage);
             Controls.Add(HelloText);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)ProfileImage).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -169,7 +165,6 @@
         #endregion
 
         private Label HelloText;
-        private PictureBox ProfileImage;
         private Button Schedule;
         private Button ToDo;
         private Button Announcements;

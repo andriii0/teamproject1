@@ -32,88 +32,66 @@
 
         private void InitializeComponent()
         {
-            HelloText = new Label();
-            label1 = new Label();
             AcceptButton = new Button();
-            RulesText = new Label();
-            Header = new Label();
+            richTextBox1 = new RichTextBox();
+            label1 = new Label();
             SuspendLayout();
-            // 
-            // HelloText
-            // 
-            HelloText.AutoSize = true;
-            HelloText.Font = new Font("Trebuchet MS", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            HelloText.ForeColor = Color.DarkOrchid;
-            HelloText.Location = new Point(356, 20);
-            HelloText.Name = "HelloText";
-            HelloText.Size = new Size(45, 29);
-            HelloText.TabIndex = 1;
-            HelloText.Text = "Hi!";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Trebuchet MS", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.DarkOrchid;
-            label1.Location = new Point(688, 20);
-            label1.Name = "label1";
-            label1.Size = new Size(100, 29);
-            label1.TabIndex = 8;
-            label1.Text = "Log Out";
             // 
             // AcceptButton
             // 
+            AcceptButton.BackColor = Color.White;
+            AcceptButton.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             AcceptButton.Location = new Point(635, 396);
             AcceptButton.Name = "AcceptButton";
             AcceptButton.Size = new Size(136, 42);
             AcceptButton.TabIndex = 9;
             AcceptButton.Text = "Accept";
-            AcceptButton.UseVisualStyleBackColor = true;
+            AcceptButton.UseVisualStyleBackColor = false;
             AcceptButton.Click += AcceptButton_Click;
             // 
-            // RulesText
+            // richTextBox1
             // 
-            RulesText.AutoSize = true;
-            RulesText.BackColor = Color.Chocolate;
-            RulesText.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            RulesText.Location = new Point(140, 162);
-            RulesText.Name = "RulesText";
-            RulesText.Size = new Size(496, 30);
-            RulesText.TabIndex = 10;
-            RulesText.Text = "Lorem ipsum dolor sit amet, consectetur adipisicing \r\n";
+            richTextBox1.BackColor = Color.White;
+            richTextBox1.Font = new Font("Georgia", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            richTextBox1.Location = new Point(65, 74);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(642, 294);
+            richTextBox1.TabIndex = 10;
+            richTextBox1.Text = "";
+            richTextBox1.ReadOnly = true;
             // 
-            // Header
+            // label1
             // 
-            Header.AutoSize = true;
-            Header.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            Header.Location = new Point(140, 112);
-            Header.Name = "Header";
-            Header.Size = new Size(108, 32);
-            Header.TabIndex = 11;
-            Header.Text = "Heading";
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Cambria", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(286, 30);
+            label1.Name = "label1";
+            label1.Size = new Size(223, 22);
+            label1.TabIndex = 11;
+            label1.Text = "Please, follow rules below!";
             // 
             // Rules
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlLightLight;
+            BackgroundImage = Properties.Resources._8ecd7a74040c6137d8db25014de3cfaa;
             ClientSize = new Size(800, 450);
-            Controls.Add(Header);
-            Controls.Add(RulesText);
-            Controls.Add(AcceptButton);
             Controls.Add(label1);
-            Controls.Add(HelloText);
+            Controls.Add(richTextBox1);
+            Controls.Add(AcceptButton);
             Name = "Rules";
             Text = "Rules";
+            Load += Rules_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label HelloText;
-        private Label label1;
         private Button AcceptButton;
-        private Label RulesText;
-        private Label Header;
+        private RichTextBox richTextBox1;
+        private Label label1;
     }
 }

@@ -63,9 +63,59 @@ namespace StudentApp1.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _8ecd7a74040c6137d8db25014de3cfaa {
+            get {
+                object obj = ResourceManager.GetObject("8ecd7a74040c6137d8db25014de3cfaa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo1_100x100 {
+            get {
+                object obj = ResourceManager.GetObject("logo1_100x100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo1_50x50 {
+            get {
+                object obj = ResourceManager.GetObject("logo1_50x50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pxfuel {
             get {
                 object obj = ResourceManager.GetObject("pxfuel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rm222_mind_20 {
+            get {
+                object obj = ResourceManager.GetObject("rm222-mind-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Без_названия {
+            get {
+                object obj = ResourceManager.GetObject("Без названия", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
