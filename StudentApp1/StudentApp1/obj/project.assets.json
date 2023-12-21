@@ -55,24 +55,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ivanb\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\arkhi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Fontys Visual Studio\\StudentApp1\\StudentApp1\\StudentApp1.csproj",
+      "projectUniqueName": "D:\\GIT\\teamproject1\\StudentApp1\\StudentApp1\\StudentApp1.csproj",
       "projectName": "StudentApp1",
-      "projectPath": "D:\\Fontys Visual Studio\\StudentApp1\\StudentApp1\\StudentApp1.csproj",
-      "packagesPath": "C:\\Users\\ivanb\\.nuget\\packages\\",
-      "outputPath": "D:\\Fontys Visual Studio\\StudentApp1\\StudentApp1\\obj\\",
+      "projectPath": "D:\\GIT\\teamproject1\\StudentApp1\\StudentApp1\\StudentApp1.csproj",
+      "packagesPath": "C:\\Users\\arkhi\\.nuget\\packages\\",
+      "outputPath": "D:\\GIT\\teamproject1\\StudentApp1\\StudentApp1\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ivanb\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\arkhi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

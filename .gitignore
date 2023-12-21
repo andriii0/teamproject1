@@ -412,3 +412,4 @@ StudentApp1/StudentApp1/obj/Debug/net7.0-windows/StudentApp1.GeneratedMSBuildEdi
 StudentApp1/StudentApp1/obj/Debug/net7.0-windows/StudentApp1.designer.runtimeconfig.json
 StudentApp1/StudentApp1/obj/Debug/net7.0-windows/StudentApp1.csproj.AssemblyReference.cache
 StudentApp1/StudentApp1/obj/Debug/net7.0-windows/StudentApp1.assets.cache
+*.cache
