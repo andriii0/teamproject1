@@ -15,7 +15,7 @@ namespace StudentApp1
     public partial class AddNoteForm : Form
     {
         private List<Note> notes;
-        private const int MaxNotes = 5;
+        private const int MaxNotes = 4;
 
         public AddNoteForm()
         {
@@ -42,7 +42,6 @@ namespace StudentApp1
             File.WriteAllText("notes.json", json);
         }
 
-
         private void BackButton_Click(object sender, EventArgs e)
         {
             NoteDisplayForm noteDisplayForm = new NoteDisplayForm();
@@ -52,7 +51,7 @@ namespace StudentApp1
 
         private void AddNoteButton_Click(object sender, EventArgs e)
         {
-            Note newNote = new Note("User", NoteTextBox.Text);
+            Note newNote = new Note(NoteTextBox.Text);
             notes.Add(newNote);
 
             if (notes.Count > MaxNotes)

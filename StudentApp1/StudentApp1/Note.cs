@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace StudentApp1
 {
-    internal class Note
+    public class Note
     {
-        public string Author { get; set; }
+   
         public string Content { get; set; }
 
-        public Note(string author, string content)
+        public Note(string content)
         {
-            Author = author;
             Content = content;
         }
     }

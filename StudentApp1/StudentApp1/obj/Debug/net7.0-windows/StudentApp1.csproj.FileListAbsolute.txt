@@ -24,3 +24,29 @@ C:\Users\Yuri\source\repos\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\Stud
 C:\Users\Yuri\source\repos\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.AddNoteForm.resources
 C:\Users\Yuri\source\repos\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.NoteDisplayForm.resources
 C:\Users\Yuri\source\repos\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.Complaints.resources
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\bin\Debug\net7.0-windows\StudentApp1.exe
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\bin\Debug\net7.0-windows\StudentApp1.deps.json
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\bin\Debug\net7.0-windows\StudentApp1.runtimeconfig.json
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\bin\Debug\net7.0-windows\StudentApp1.dll
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\bin\Debug\net7.0-windows\StudentApp1.pdb
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.csproj.AssemblyReference.cache
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.AddNoteForm.resources
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.AdminForm.resources
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.Complaints.resources
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.Form1.resources
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.LoginForm.resources
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.NoteDisplayForm.resources
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.Properties.Resources.resources
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.Rules.resources
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.csproj.GenerateResource.cache
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.AssemblyInfoInputs.cache
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.AssemblyInfo.cs
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.csproj.CoreCompileInputs.cache
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.csproj.CopyComplete
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.dll
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\refint\StudentApp1.dll
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.pdb
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.genruntimeconfig.cache
+D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\ref\StudentApp1.dll

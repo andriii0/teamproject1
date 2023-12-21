@@ -51,43 +51,25 @@ namespace StudentApp1
         {
             tableLayoutPanel.Controls.Clear();
 
-            foreach (var note in notes)
+            foreach (Note note in notes)
             {
-                Panel notePanel = CreateNotePanel(note);
-                tableLayoutPanel.Controls.Add(notePanel);
+                Label noteLabel = CreateNoteLabel(note);
+                tableLayoutPanel.Controls.Add(noteLabel);
             }
         }
 
-        private Panel CreateNotePanel(Note note)
+        private Label CreateNoteLabel(Note note)
         {
-            Panel panel = new Panel
+            Label label = new Label
             {
                 BorderStyle = BorderStyle.Fixed3D,
-                Width = 200,
-                Height = 150
+                Width = 400,
+                Height = 325,
+                Text = $"Author: {CurrentUser.StudentName}\n{note.Content}"
             };
 
-            Label authorLabel = new Label
-            {
-                Text = $"Author: {note.Author}",
-                Dock = DockStyle.Top
-            };
-
-            TextBox contentTextBox = new TextBox
-            {
-                Multiline = true,
-                ReadOnly = true,
-                Text = note.Content,
-                Dock = DockStyle.Fill,
-                ScrollBars = ScrollBars.Vertical
-            };
-
-            panel.Controls.Add(authorLabel);
-            panel.Controls.Add(contentTextBox);
-
-            return panel;
+            return label;
         }
-
 
         private void AddNotes_Click(object sender, EventArgs e)
         {
