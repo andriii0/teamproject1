@@ -48,7 +48,7 @@ namespace StudentApp1
             this.Close();
             noteDisplayForm.Show();
         }
-
+        //сука ты дибил ничего не работает
         private void AddNoteButton_Click(object sender, EventArgs e)
         {
             Note newNote = new Note(NoteTextBox.Text);
