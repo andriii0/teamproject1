@@ -72,6 +72,7 @@
             ToDo.TabIndex = 3;
             ToDo.Text = "To Do List";
             ToDo.UseVisualStyleBackColor = false;
+            ToDo.Click += ToDo_Click;
             // 
             // Announcements
             // 

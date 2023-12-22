@@ -31,15 +31,12 @@ namespace StudentApp1
             {
                 if ((user.Username == username && user.Password == password) || (user.Email == username && user.Password == password))
                 {
+                    isAuthenticated = true;
+                    CurrentUser.LoggedInUser = user;
+
                     if (user.Username == "admin" && user.Password == "admin")
                     {
                         isAdmin = true;
-                        break;
-                    }
-                    else
-                    {
-                        isAuthenticated = true;
-                        roomNumber = user.Room;
                         break;
                     }
                 }
@@ -47,22 +44,22 @@ namespace StudentApp1
 
             if (isAuthenticated)
             {
-                CurrentUser.StudentName = username;
-                CurrentUser.RoomNumber = roomNumber;
-                Rules rules = new Rules();
-                this.Hide();
-                rules.Show();
+                User authenticatedUser = CurrentUser.LoggedInUser;
+
+                if (!isAdmin)
+                {
+                    Form1 form1 = new Form1(authenticatedUser);
+                    this.Hide();
+                    form1.Show();
+                }
+                else
+                {
+                    AdminForm adminForm = new AdminForm();
+                    this.Hide();
+                    adminForm.Show();
+                }
             }
-            else if (isAdmin)
-            {
-                AdminForm adminForm = new AdminForm();
-                this.Hide();
-                adminForm.Show();
-            }
-            else
-            {
-                MessageBox.Show("Something is wrong! :/");
-            }
+            else MessageBox.Show("Error logging in");
         }
 
         private UserDatabase LoadUsersFromJson()
@@ -70,7 +67,16 @@ namespace StudentApp1
             try
             {
                 string jsonText = File.ReadAllText(filePath);
-                return JsonConvert.DeserializeObject<UserDatabase>(jsonText);
+                UserDatabase userDatabase = JsonConvert.DeserializeObject<UserDatabase>(jsonText);
+
+                if (userDatabase != null && userDatabase.Users != null)
+                {
+                    return userDatabase;
+                }
+                else
+                {
+                    return new UserDatabase { Users = new List<User>() };
+                }
             }
             catch (Exception ex)
             {

@@ -2,9 +2,7 @@ namespace StudentApp1
 {
     public partial class Form1 : Form
     {
-        string StudentName = "";
-
-        public Form1()
+        public Form1(User authenticatedUser)
         {
             InitializeComponent();
             UpdateHelloText();
@@ -12,7 +10,7 @@ namespace StudentApp1
 
         private void UpdateHelloText()
         {
-            HelloText.Text = $"Hello! {CurrentUser.StudentName} :)";
+            HelloText.Text = $"Hello! {CurrentUser.LoggedInUser.Name} :)";
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
@@ -41,7 +39,7 @@ namespace StudentApp1
         }
         private void Notes_Click(object sender, EventArgs e)
         {
-            NoteDisplayForm noteDisplayForm = new NoteDisplayForm();
+            NoteDisplayForm noteDisplayForm = new NoteDisplayForm(CurrentUser.LoggedInUser);
             this.Close();
             noteDisplayForm.Show();
         }
@@ -55,6 +53,13 @@ namespace StudentApp1
             Complaints complaints = new Complaints();
             this.Close();
             complaints.Show();
+        }
+
+        private void ToDo_Click(object sender, EventArgs e)
+        {
+            ToDoForm toDoForm = new ToDoForm(CurrentUser.LoggedInUser);
+            this.Close();
+            toDoForm.Show();
         }
     }
 }

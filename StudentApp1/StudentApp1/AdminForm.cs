@@ -18,11 +18,22 @@ namespace StudentApp1
     {
         private const string jsonFilePath = "users.json";
         private UserDatabase userDatabase;
+        private List<Room> rooms = new List<Room>();
+
 
         public AdminForm()
         {
             InitializeComponent();
             LoadUserData();
+            InitializeRooms();
+
+        }
+        private void InitializeRooms()
+        {
+            for (int i = 1; i <= 10; i++)
+            {
+                rooms.Add(new Room(i));
+            }
         }
 
         private void LoadUserData()
@@ -31,12 +42,14 @@ namespace StudentApp1
             {
                 string json = File.ReadAllText(jsonFilePath);
                 userDatabase = JsonConvert.DeserializeObject<UserDatabase>(json);
+                if (userDatabase != null && userDatabase.Users != null)
+                {
+                    return;
+                }
             }
-            else
-            {
                 userDatabase = new UserDatabase { Users = new List<User>() };
             }
-        }
+        
 
         private void SaveUserData()
         {
@@ -74,16 +87,7 @@ namespace StudentApp1
             }
         }
 
-        public class User
-        {
-            public int Id { get; set; }
-            public string Name { get; set; }
-            public string Username { get; set; }
-            public int Age { get; set; }
-            public int Room { get; set; }
-            public string Email { get; set; }
-            public string Password { get; set; }
-        }
+
 
         public class UserDatabase
         {
@@ -113,6 +117,9 @@ namespace StudentApp1
                 Password = textBox5.Text,
                 Room = int.Parse(textBox6.Text)
             };
+            int roomNumber = int.Parse(textBox6.Text);
+            rooms[roomNumber - 1].Register(newUser);
+            rooms[roomNumber - 1].AssignTasksRandomly();
 
             userDatabase.Users.Add(newUser);
             SaveUserData();

@@ -12,6 +12,8 @@ namespace StudentApp1
 {
     public partial class Rules : Form
     {
+        private User authenticatedUser;
+
 
         public Rules()
         {
@@ -21,7 +23,7 @@ namespace StudentApp1
         private void AcceptButton_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form1 form1 = new Form1();
+            Form1 form1 = new Form1(authenticatedUser);
             form1.Show();
         }
 

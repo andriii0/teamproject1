@@ -8,7 +8,6 @@ namespace StudentApp1
 {
     public static class CurrentUser
     {
-        public static string StudentName { get; set; }
-        public static int RoomNumber { get; set; }
+        public static User LoggedInUser { get; set; }
     }
 }
