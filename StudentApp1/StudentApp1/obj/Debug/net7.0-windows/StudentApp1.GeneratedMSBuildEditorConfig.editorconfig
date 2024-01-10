@@ -14,4 +14,8 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = StudentApp1
+<<<<<<< HEAD
 build_property.ProjectDir = C:\GitCommits\teamproject1\StudentApp1\StudentApp1\
+=======
+build_property.ProjectDir = D:\GIT\teamproject1\StudentApp1\StudentApp1\
+>>>>>>> Anton_krasava

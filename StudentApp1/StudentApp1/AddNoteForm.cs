@@ -44,7 +44,7 @@ namespace StudentApp1
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-            NoteDisplayForm noteDisplayForm = new NoteDisplayForm();
+            NoteDisplayForm noteDisplayForm = new NoteDisplayForm(CurrentUser.LoggedInUser);
             this.Close();
             noteDisplayForm.Show();
         }
@@ -60,7 +60,7 @@ namespace StudentApp1
             }
 
             SaveNotes();
-            NoteDisplayForm noteDisplayForm = new NoteDisplayForm();
+            NoteDisplayForm noteDisplayForm = new NoteDisplayForm(CurrentUser.LoggedInUser);
             this.Close();
             noteDisplayForm.Show();
         }

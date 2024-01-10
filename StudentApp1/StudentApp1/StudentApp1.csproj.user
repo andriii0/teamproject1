@@ -22,5 +22,8 @@
     <Compile Update="Rules.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ToDoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

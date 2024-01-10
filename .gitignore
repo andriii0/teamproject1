@@ -396,3 +396,20 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+StudentApp1/StudentApp1/obj/Debug/net7.0-windows/StudentApp1.assets.cache
+StudentApp1/StudentApp1/obj/Debug/net7.0-windows/StudentApp1.csproj.AssemblyReference.cache
+StudentApp1/StudentApp1/obj/Debug/net7.0-windows/StudentApp1.designer.runtimeconfig.json
+StudentApp1/StudentApp1/obj/Debug/net7.0-windows/StudentApp1.GeneratedMSBuildEditorConfig.editorconfig
+StudentApp1/StudentApp1/obj/project.assets.json
+StudentApp1/StudentApp1/obj/project.nuget.cache
+StudentApp1/StudentApp1/obj/StudentApp1.csproj.nuget.dgspec.json
+StudentApp1/StudentApp1/obj/StudentApp1.csproj.nuget.g.props
+StudentApp1/StudentApp1/obj/StudentApp1.csproj.nuget.g.props
+StudentApp1/StudentApp1/obj/StudentApp1.csproj.nuget.dgspec.json
+StudentApp1/StudentApp1/obj/project.nuget.cache
+StudentApp1/StudentApp1/obj/project.assets.json
+StudentApp1/StudentApp1/obj/Debug/net7.0-windows/StudentApp1.GeneratedMSBuildEditorConfig.editorconfig
+StudentApp1/StudentApp1/obj/Debug/net7.0-windows/StudentApp1.designer.runtimeconfig.json
+StudentApp1/StudentApp1/obj/Debug/net7.0-windows/StudentApp1.csproj.AssemblyReference.cache
+StudentApp1/StudentApp1/obj/Debug/net7.0-windows/StudentApp1.assets.cache
+*.cache

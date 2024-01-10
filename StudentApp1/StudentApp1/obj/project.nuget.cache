@@ -1,10 +1,18 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "3bL4aleK9S8gkO6F8CxQEllCNHLcsVP8rtQujTjnvGsrTKVEyud5O3y4hoTrTVEpV3+Kl1PJRNe/5VsgsXzO/A==",
   "success": true,
   "projectFilePath": "C:\\GitCommits\\teamproject1\\StudentApp1\\StudentApp1\\StudentApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yuri\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+=======
+  "dgSpecHash": "rpajD4CKGWBHs0Z9oC64BLkqOcPSnljZzorjG9qPhQtdl5uCR0lJVwb5ghJ0YSWkR1tCg1Kdgp+gV8DtAn+BmQ==",
+  "success": true,
+  "projectFilePath": "D:\\GIT\\teamproject1\\StudentApp1\\StudentApp1\\StudentApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\arkhi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+>>>>>>> Anton_krasava
   ],
   "logs": []
 }

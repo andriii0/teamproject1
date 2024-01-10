@@ -8,7 +8,7 @@ namespace StudentApp1
 {
     public class Note
     {
-   
+   //ваня что ты сделал
         public string Content { get; set; }
 
         public Note(string content)

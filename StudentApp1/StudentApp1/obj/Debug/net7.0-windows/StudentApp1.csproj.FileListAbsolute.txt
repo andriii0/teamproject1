@@ -50,6 +50,7 @@ D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\refint\
 D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.pdb
 D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.genruntimeconfig.cache
 D:\Fontys Visual Studio\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\ref\StudentApp1.dll
+<<<<<<< HEAD
 C:\GitCommits\teamproject1\StudentApp1\StudentApp1\bin\Debug\net7.0-windows\StudentApp1.exe
 C:\GitCommits\teamproject1\StudentApp1\StudentApp1\bin\Debug\net7.0-windows\StudentApp1.deps.json
 C:\GitCommits\teamproject1\StudentApp1\StudentApp1\bin\Debug\net7.0-windows\StudentApp1.runtimeconfig.json
@@ -76,3 +77,32 @@ C:\GitCommits\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\refi
 C:\GitCommits\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.pdb
 C:\GitCommits\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.genruntimeconfig.cache
 C:\GitCommits\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\ref\StudentApp1.dll
+=======
+D:\GIT\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.csproj.AssemblyReference.cache
+D:\GIT\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.AddNoteForm.resources
+D:\GIT\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.AdminForm.resources
+D:\GIT\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.Complaints.resources
+D:\GIT\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.Form1.resources
+D:\GIT\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.LoginForm.resources
+D:\GIT\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.NoteDisplayForm.resources
+D:\GIT\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.Properties.Resources.resources
+D:\GIT\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.Rules.resources
+D:\GIT\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.ToDoForm.resources
+D:\GIT\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.csproj.GenerateResource.cache
+D:\GIT\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.AssemblyInfoInputs.cache
+D:\GIT\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.AssemblyInfo.cs
+D:\GIT\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.csproj.CoreCompileInputs.cache
+D:\GIT\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.dll
+D:\GIT\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\refint\StudentApp1.dll
+D:\GIT\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.pdb
+D:\GIT\teamproject1\StudentApp1\StudentApp1\bin\Debug\net7.0-windows\StudentApp1.exe
+D:\GIT\teamproject1\StudentApp1\StudentApp1\bin\Debug\net7.0-windows\StudentApp1.deps.json
+D:\GIT\teamproject1\StudentApp1\StudentApp1\bin\Debug\net7.0-windows\StudentApp1.runtimeconfig.json
+D:\GIT\teamproject1\StudentApp1\StudentApp1\bin\Debug\net7.0-windows\StudentApp1.dll
+D:\GIT\teamproject1\StudentApp1\StudentApp1\bin\Debug\net7.0-windows\StudentApp1.pdb
+D:\GIT\teamproject1\StudentApp1\StudentApp1\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
+D:\GIT\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.csproj.CopyComplete
+D:\GIT\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\StudentApp1.genruntimeconfig.cache
+D:\GIT\teamproject1\StudentApp1\StudentApp1\obj\Debug\net7.0-windows\ref\StudentApp1.dll
+>>>>>>> Anton_krasava

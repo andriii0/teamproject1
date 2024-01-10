@@ -9,23 +9,28 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Microsoft.VisualBasic.ApplicationServices;
 
 
 namespace StudentApp1
 {
+
     public partial class NoteDisplayForm : Form
     {
-        private string StudentName;
+        private User authenticatedUser;
+
         private List<Note> notes;
-        public NoteDisplayForm()
+        public NoteDisplayForm(User user)
         {
             InitializeComponent();
             LoadNotes();
+            authenticatedUser = user;
+
         }
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
+            Form1 form1 = new Form1(authenticatedUser);
             this.Close();
             form1.Show();
         }
@@ -65,7 +70,7 @@ namespace StudentApp1
                 BorderStyle = BorderStyle.Fixed3D,
                 Width = 400,
                 Height = 325,
-                Text = $"Author: {CurrentUser.StudentName}\n{note.Content}"
+                Text = $"Author: {CurrentUser.LoggedInUser.Name}\n{note.Content}"
             };
 
             return label;

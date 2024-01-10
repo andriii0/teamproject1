@@ -55,24 +55,37 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Yuri\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+=======
+    "C:\\Users\\arkhi\\.nuget\\packages\\": {}
+>>>>>>> Anton_krasava
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\GitCommits\\teamproject1\\StudentApp1\\StudentApp1\\StudentApp1.csproj",
       "projectName": "StudentApp1",
       "projectPath": "C:\\GitCommits\\teamproject1\\StudentApp1\\StudentApp1\\StudentApp1.csproj",
       "packagesPath": "C:\\Users\\Yuri\\.nuget\\packages\\",
       "outputPath": "C:\\GitCommits\\teamproject1\\StudentApp1\\StudentApp1\\obj\\",
+=======
+      "projectUniqueName": "D:\\GIT\\teamproject1\\StudentApp1\\StudentApp1\\StudentApp1.csproj",
+      "projectName": "StudentApp1",
+      "projectPath": "D:\\GIT\\teamproject1\\StudentApp1\\StudentApp1\\StudentApp1.csproj",
+      "packagesPath": "C:\\Users\\arkhi\\.nuget\\packages\\",
+      "outputPath": "D:\\GIT\\teamproject1\\StudentApp1\\StudentApp1\\obj\\",
+>>>>>>> Anton_krasava
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\Yuri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+=======
+        "C:\\Users\\arkhi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Anton_krasava
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
